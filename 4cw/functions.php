@@ -1,5 +1,4 @@
 <?php
-//not working
 function load_stylesheet()
 {
 
@@ -14,7 +13,7 @@ add_action('wp_enqueue_scripts', 'load_stylesheet');
 
 function load_js()
 {
-  wp_register_script('customjs', get_template_directory_uri() . "/js/scirpts.js", '', 1, true);
+  wp_register_script('customjs', get_template_directory_uri() . "/js/scripts.js", '', 1, true);
   wp_enqueue_script('customjs');
 
 }
