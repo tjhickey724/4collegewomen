@@ -2,12 +2,12 @@
 
 	Theme Name: Wilson
     Text Domain: wilson
-	Version: 1.35
-	Description: Wilson is a clean, simple and responsive theme for personal sites and blogs. Features responsive design, retina-ready assets, Gutenberg support, custom accent color support, custom logo support, custom widgets for video and Flickr embeds, page templates, editor styles and translation-ready code. Demo: http://www.andersnoren.se/themes/wilson/
+	Version: 1.36
+	Description: Wilson is a clean, simple and responsive theme for personal sites and blogs. Features responsive design, retina-ready assets, Block Editor/Gutenberg support, custom accent color support, custom logo support, custom widgets for video and Flickr embeds, page templates, and editor styles. Demo: https://www.andersnoren.se/themes/wilson/
 	Tags: blog, two-columns, left-sidebar, custom-colors, custom-header, custom-menu, editor-style, featured-images, footer-widgets, post-formats, sticky-post, theme-options, threaded-comments, translation-ready
 	Author: Anders Norén
-	Author URI: http://www.andersnoren.se
-	Theme URI: http://www.andersnoren.se/teman/wilson-wordpress-theme/
+	Author URI: https://www.andersnoren.se
+	Theme URI: https://www.andersnoren.se/teman/wilson-wordpress-theme/
 	License: GNU General Public License version 2.0
 	License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -38,7 +38,7 @@
 /*	0. CSS Reset
 /* -------------------------------------------------------------------------------- */
 
-html, body { margin:0; padding:0}
+html, body { margin:0; padding:0;}
 
 h1, h2, h3, h4, h5, h6, p, blockquote, address, big, cite, code, em, font, img, small, strike, sub, sup, li, ol, ul, fieldset, form, label, legend, button, table, caption, tr, th, td {
 	margin: 0;
@@ -64,7 +64,7 @@ blockquote:after {
     content: '';
 }
 
-a { outline: focus; }
+a { outline: none; }
 
 input[type=search] {
    -moz-appearance: none;
@@ -85,7 +85,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 
 body {
-    background: #9932CC;
+    background: #E6E6FA;
     border: none;
 	color: #555;
     font-family: 'Lato', 'Helvetica Neue', sans-serif;
@@ -220,29 +220,28 @@ a.more-link,
 
 
 .wrapper {
-	background: url('images/1px-white.png') right repeat-y;
+	background: #E6E6FA;
 	background-size: 68% auto;
 	margin: 0 auto;
-	max-width: 86%;
+	max-width: 80%;
 	position: relative;
 	width: 1160px;
-	background-color: #9932CC;
 }
 
 .sidebar {
+	background: #EE82EE;
+  float: left;
+	margin-top: 3%;
 	padding-top: 5%;
 	padding-bottom: 5%;
-  float: left;
-	margin: 0 0 0 0;
-  width: 32%;
-	background-color: #BA55D3;
+  width: 30%;
 }
 
 .content {
-  background-color: #800080;
+  background: #FFF;
 	float: right;
   position: relative;
-  width: 68%;
+  width: 67%;
 	z-index: 2;
 }
 
@@ -256,11 +255,7 @@ a.more-link,
 .blog-menu,
 .sidebar .widgets {
 	padding-left: 10%;
-	padding-right: 10%;
-}
-
-.blog-menu{
-	background: #800080;
+	padding-right: 5%;
 }
 
 .blog-header { text-align: center; }
@@ -283,21 +278,21 @@ a.more-link,
 
 
 .blog-title a {
-    color: #FFF;
+  color: #FFF;
 	display: block;
-    font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
 	font-size: 1.75em;
-    font-weight: 700;
-    letter-spacing: 1px;
+  font-weight: 700;
+  letter-spacing: 1px;
 	line-height: 120%;
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 	text-transform: uppercase;
 }
 
-.blog-title a:hover { color: #FF706C; }
+.blog-title a:hover { color: #FFFF66; }
 
 .blog-description {
-    color: rgba( 255, 255, 255, 0.5 );
+  color: rgba( 255, 255, 255, 0.5 );
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
 	line-height: 120%;
@@ -319,7 +314,7 @@ a.more-link,
 	padding-bottom: 15%;
 	margin-top: 15%;
 	margin-bottom: 15%;
-	background: #800080;
+	background: #BA55D3;
 	border-radius: 8px 0 0 8px;
 }
 
@@ -330,9 +325,9 @@ a.more-link,
 	color: #FFF;
 }
 
-.blog-menu a:hover { padding-left: 10px; color: #FF706C; }
+.blog-menu a:hover { padding-left: 10px; color: #FFFF66; }
 
-.blog-menu .current-menu-item > a { color: #FF706C; }
+.blog-menu .current-menu-item > a { color: #FFFF66; }
 .blog-menu .current-menu-item a:hover { padding-left: 0; }
 
 .blog-menu .sub-menu,
@@ -412,21 +407,21 @@ a.more-link,
 
 .widget_search .searchform #s {
 	padding: 16px 45px 16px 16px;
-	background: #48515C;
+	background: #E6E6FA;
 	font-family: 'Lato', sans-serif;
 	font-size: 1rem;
 	border-radius: 6px;
 	-webkit-font-smoothing: subpixel-antialiased;
-	color: #FFF;
+	color: #E6E6FA;
 }
 
-.widget_search .searchform #s:focus { color: #FFF; }
+.widget_search .searchform #s:focus { color: #000000; }
 
 .widget_search .searchform .searchsubmit { right: 21px; }
 
 .widget_search .searchform .searchsubmit,
-.widget_search .searchform .searchsubmit:before { background: #FFF; }
-.widget_search .searchform .searchsubmit:after { background: #48515C; }
+.widget_search .searchform .searchsubmit:before { background: #000000; }
+.widget_search .searchform .searchsubmit:after { background: #E6E6FA; }
 
 
 /* Widget tag cloud --------------------------------------- */
@@ -571,7 +566,7 @@ a.more-link,
 	margin: 8% 8% 0 8%;
 }
 
-.featured-media + .post-inner { padding-top: 8%; }
+.featured-media + .post-inner { padding-top: 6%; }
 
 .featured-media img {
 	display: block;
@@ -882,6 +877,7 @@ code, kbd, pre {
 
 .post-content .highlight {
 	background: #fcf8a5;
+	width: auto;
 	display: inline;
 	padding: 2px 3px;
 }
@@ -1960,7 +1956,7 @@ img#wpstats { display: none; }
 
 @media (max-width: 788px) {
 
-	body { background: #9932CC; }
+	body { background: #FFF; }
 
 	/* Structure --------------------------------------- */
 
@@ -1981,7 +1977,7 @@ img#wpstats { display: none; }
 	.sidebar {
 		position: relative;
 		margin: 0;
-		background: #353E49;
+		background: #E6E6FA;
 	}
 
 	.sidebar .blog-header {
